@@ -10,7 +10,7 @@ import axios from "axios"
 //const FormQuestions = db.FormQuestions
 
 
-export default function create() {
+export default function Create() {
 
     const [title, setTitle] = useState("")
     const [questions, setQuestions] = useState([])

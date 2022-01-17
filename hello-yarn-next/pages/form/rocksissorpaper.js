@@ -4,7 +4,7 @@ import reactDom from "react-dom"
 import styles from '../../styles/Home.module.css'
 import {v4 as uuidv4} from 'uuid'
 
-export default function create() {
+export default function Create() {
 
     const [cnt, setCnt] = useState(3);
     const [gaming, setGaming] = useState(false) // 라운드 진행 중인지
