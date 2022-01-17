@@ -1,3 +1,4 @@
+/*
 const express = require("express");
 const bodyParser = require('body-parser');
 const cors = require("cors");
@@ -26,26 +27,6 @@ const FormQuestions = db.FormQuestions
 
 app.post("/route", async (req, res) => {
   
-    /*
-    const questions = await FormQuestions.findAll({
-        order: [["createdAt", "DESC"]]
-    })
-
-    res.json({questions: questions})
-    */
-
-    //console.log(req.body)
-    //res.json({body: req.body})
-    /*
-    const result = await FormQuestions.create({
-      googleFormId: Math.random,//question.uuid,
-      title: "test_title",//questions.title,
-      questionType: "test_type",//question.questionType,
-      description: "desc"//question.description
-  })
-    res.json({result: result})
-    const questions = req.body.questions
-    */
     const arr_q = Array.from(req.body.data)
     await arr_q.forEach(async(question, index) => {
       const result = await FormQuestions.create({
@@ -68,17 +49,11 @@ app.post("/route", async (req, res) => {
         //res.json({option: _result})
         //console.log("option: " + _result)
       })
-      /*
-      const Qs = await FormQuestions.findAll({
-        order: [["createdAt", "DESC"]]
-      })
-      const Os = await FormQuestionOptions.findAll({
-        order: [["createdAt", "DESC"]]
-      })
-      res.json({Questions: Qs, Options: Os})*/
+
   })
   
   //res.json({body: req.body.data})
   //res.send(req.body)
 })
 
+*/
